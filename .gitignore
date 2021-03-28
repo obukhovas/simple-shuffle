@@ -1,0 +1,8 @@
+# WebStorm
+.idea/
+.idea/workspace.xml
+**/.idea/workspace.xml
+
+# Visual Studio Code
+.settings/
+.vscode/
