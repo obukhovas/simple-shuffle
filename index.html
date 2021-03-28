@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shuffle</title>
+    <link rel="shortcut icon" href="image/shuffle_icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <h2 class="container__title">Just shuffle!</h2>
+        <div class="container__content">
+            <form class="content__form">
+                <input class="input" type="text" maxlength="40" placeholder="Add a new item">
+                <button class="add" type="submit">
+                    <img class="add__icon" src="image/plus.svg" alt="add">
+                </button>
+            </form>
+            <div class="content__buttons">
+                <button class="shuffle">
+                    <span class="shuffle__text">SHUFFLE</span>
+                    <span class="shuffle__img">
+                        <img class="shuffle__icon" src="image/shuffle.svg" alt="SHUFFLE">
+                    </span>
+                </button>
+                <button class="reset">
+                    <img class="reset__icon" src="image/reset.svg" alt="reset">
+                </button>
+            </div>
+            <div class="content__result">
+                <ul class="list">
+                </ul>
+            </div>
+            <div class="content__message">
+                There is no content to shuffle :(
+            </div>
+        </div>
+    </div>
+    <script src="script/main.js"></script>
+</div>
+</body>
+</html>
