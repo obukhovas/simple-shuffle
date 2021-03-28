@@ -14,6 +14,7 @@ input, button {
 
 button {
     background: #3f51b5;
+    opacity: 1;
     color: #FFF;
     border: none;
     outline: none;
@@ -23,7 +24,7 @@ button {
 }
 
 button:hover {
-    background: #668ad8;
+    opacity: .5;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 
@@ -178,6 +179,16 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+    button:hover {
+        opacity: 1;
+        box-shadow: none;
+    }
+
+    button:active {
+        opacity: .5;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    }
+
     .container__content {
         width: 50%;
     }
@@ -188,6 +199,14 @@ li {
 
     .shuffle {
         padding: 10px 10px;
+    }
+
+    .item__remove:hover {
+        color: inherit;
+    }
+
+    .item__remove:active {
+        color: red;
     }
 }
 
