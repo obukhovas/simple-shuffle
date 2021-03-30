@@ -64,6 +64,30 @@ li {
 .container__title {
     font-size: 58px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.8;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container__title--hide {
+    margin-bottom: 15px;
+}
+
+.container__title::after {
+    content: "";
+    background: url('../image/tick.svg');
+    display: block;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.container__title--hide.container__title::after {
+    content: "";
+    transform: rotate(-90deg);
 }
 
 .container__content {
@@ -71,8 +95,19 @@ li {
 }
 
 .content__form {
-    margin-bottom: 20px;
     display: flex;
+    height: 40px;
+    transition: height .3s linear;
+}
+
+.content__form--hide {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.content__form--hide .add {
+    height: 0;
 }
 
 .input {
@@ -91,6 +126,7 @@ li {
     width: 38px;
     height: 38px;
     border-radius: 5px;
+    transition: height .3s linear;
 }
 
 .add__icon {
@@ -99,6 +135,7 @@ li {
 }
 
 .content__buttons {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,6 +232,13 @@ li {
 
     .container__title {
         font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .container__title::after {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
     }
 
     .shuffle {

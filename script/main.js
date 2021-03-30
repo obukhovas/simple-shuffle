@@ -15,6 +15,8 @@ const shuffleButton = document.querySelector('.shuffle');
 const resetButton = document.querySelector('.reset');
 const list = document.querySelector('.list');
 const message = document.querySelector('.content__message');
+const containerTitle = document.querySelector('.container__title');
+const contentForm = document.querySelector('.content__form');
 
 function saveToStorage() {
     const itemNames = list.querySelectorAll('.item__name');
@@ -96,6 +98,11 @@ document.addEventListener('click', event => {
         && eventTarget !== addButton) {
         changeInputColor(COLOR_BLACK);
     }
+})
+
+containerTitle.addEventListener('click', () => {
+    containerTitle.classList.toggle('container__title--hide');
+    contentForm.classList.toggle('content__form--hide');
 })
 
 input.addEventListener('keydown', event => {
